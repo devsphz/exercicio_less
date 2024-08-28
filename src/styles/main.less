@@ -1,4 +1,6 @@
 @import "variaveis.less";
+@import "mapas.less";
+
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
 
@@ -10,7 +12,7 @@
 }
 
 body {
-    background-color: @corFundo;
+    background-color: #colors[backgroundDefault];
 }
 
 li {
@@ -24,7 +26,7 @@ li {
 }
 
 header {
-    background-color: @navFundoHeader;
+    background-color: #colors[backgroundHeader];
     position: sticky;
     top: 0;
     left: 0;
@@ -45,7 +47,7 @@ header {
         margin-left: 24px;
 
         a {
-            color: @corDefault;
+            color: #colors[colorTextDefault];
             text-decoration: none;
         }
     }
@@ -71,8 +73,8 @@ section {
 
         .product-button {
             display: block;
-            background-color: @corButton;
-            color: #fff;
+            background-color: #colors[buttonColor];
+            color: #colors[colorTextDefault];
             text-align: center;
             padding: 8px 0;
             border-radius: 8px;
@@ -80,7 +82,7 @@ section {
             text-decoration: none;
 
             &:hover {
-                background-color: @corButtonHover;
+                background-color: #colors[buttonColorHover];
             }
         }
     }
