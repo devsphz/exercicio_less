@@ -1,3 +1,4 @@
+@import "variaveis.less";
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
 
@@ -9,7 +10,7 @@
 }
 
 body {
-    background-color: #f5f6fa;
+    background-color: @corFundo;
 }
 
 li {
@@ -23,7 +24,7 @@ li {
 }
 
 header {
-    background-color: #182C61;
+    background-color: @navFundoHeader;
     position: sticky;
     top: 0;
     left: 0;
@@ -44,7 +45,7 @@ header {
         margin-left: 24px;
 
         a {
-            color: #fff;
+            color: @corDefault;
             text-decoration: none;
         }
     }
@@ -70,7 +71,7 @@ section {
 
         .product-button {
             display: block;
-            background-color: #44bd32;
+            background-color: @corButton;
             color: #fff;
             text-align: center;
             padding: 8px 0;
@@ -79,7 +80,7 @@ section {
             text-decoration: none;
 
             &:hover {
-                background-color: #4cd137;
+                background-color: @corButtonHover;
             }
         }
     }
